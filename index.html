@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title> Encrypt/Decrypt text </title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Encrypt/Decrypt text
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="https://chaali.mery-ch.repl.co/#projects">Project </a></li>
+        <li><a href="https://chaali.mery-ch.repl.co/#services" target="_blank">Services</a></li>
+        <li><a href="https://chaali.mery-ch.repl.co/#contact" target="_blank">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <h1 class="title">Encrypt/Decrypt text
+    </h1>
+    <label class="discription" for="message">Message :</label>
+    <textarea class="pasteText" id="message" rows="5" cols="50"
+      placeholder="This is a secret message to encrypt! Don't forget subscribe to my channel :)"></textarea>
+    <label class="descriptpswod" for="key">password :</label>
+    <input class="password" type="text" id="key" placeholder="Key" value="" size="50">
+    <div class="buttons">
+      <button class="encrypt" id="enc-btn">Encrypt</button>
+      <button class="decrypt" id="dec-btn">Decrypt</button>
+    </div>
+
+    <h2 class="result">Result:</h2>
+    <textarea class="copy-text" id="result" readonly></textarea>
+    <button onclick="ticop()" class="btn-copy">Copy</button>
+
+  </div>
+
+
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
